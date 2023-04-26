@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ксения Тугина](https://htmlacademy.ru/profile/id2366847).
-* Наставник: `Артур Трифонов`(https://htmlacademy.ru/profile/wrgraff).
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 

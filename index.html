@@ -5,14 +5,14 @@
     <title>Интернет-магазин гаджетов device</title>
   </head>
   <body>
-    <header class="page-header"> <!--должен быть вложен в слайдер-->
-      <section>
+    <header class="page-header">
+      <section><!--не знаю какой класс дать-->
       <a class="page-header-logo" href="#">
-       <img src="#" width="145" height="36" alt="Логотип интернет-магазина device">
+       <img src="https://htmlacademy.ru/" width="145" height="36" alt="Логотип интернет-магазина device">
       </a>
-        <nav class="main-navigation">
+      <nav class="main-navigation">
         <ul class="main-navigation-list">
-            <li><a class="main-navigation-link" href="#">Каталог товаров</a></li>
+            <li><a class="main-navigation-link" href="#">Каталог товаров</a>
               <ul>
                 <li><a class="main-navigation-link" href="#">Виртуальная реальность</a></li>
                 <li><a class="main-navigation-link" href="#">Моноподы для селфи</a></li>
@@ -21,15 +21,19 @@
                 <li><a class="main-navigation-link" href="#">Умные часы</a></li>
                 <li><a class="main-navigation-link" href="#">Квадрокоптеры</a></li>
               </ul>
+            </li>
             <li><a class="main-navigation-link" href="#">Доставка</a></li>
             <li><a class="main-navigation-link" href="#">Гарантия</a></li>
             <li><a class="main-navigation-link" href="#">Контакты</a></li>
         </ul>
       </section>
-        <section>
-          <form action=""https://echo.htmlacademy.ru" method="POST">
-            <img href="#" width="16" height="16">
-            <input type="search" name="search-query" placeholder="Поиск по сайту">Найти</form>
+      <section class="navigation">
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <!--<img src="#" width="16" height="16">декоративное через css?-->
+          <label for="search-field"></label>
+          <input type="text" name="search-query" id="search-field" placeholder="Поиск по сайту">
+          <button class="search-button" type="button">Найти</button>
+        </form>
         <ul class="navigation-list">
           <li>
             <img class="navigation-icon" href="#">
@@ -40,7 +44,7 @@
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li>
-            <img class="navigation-icon" href="#">
+            <!--Цифра в круге — не иконка, это текст, где указано сколько товаров в корзине-->
             <img class="navigation-icon" href="#">
             <a class="navigation-link" href="#">Корзина</a>
           </li>
@@ -51,11 +55,123 @@
 
     <main class="main-index">
       <h1 class="visually-hiden">Интернет-магазин гаджетов device</h1>
+      <section class="gallery">
+        <img class="slider-image" src="#" alt="Гаджеты">
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hiden">Предыдущее фото</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hiden">Следующее фото</span>
+        </button>
+        <ul class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hiden">1 фото</span>
+            </button>
+            <div>
+              <p class="slider-pagination-item-title">Порхает как бабочка,<br> <!--название класса правильно?-->
+                жалит как пчела!</p>
+                <p class="slider-pagination-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен
+                мощным лазером, замаскированным под стандартную камеру.</p>
+                <a class="button" href="#">подробнее</a>
+                <table class="slider-pagination-item-characteristics">
+                <tr>
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hiden">2 фото</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hiden">3 фото</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="product">
+        <ul class="product-item">
+          <li>
+            <a class="product-list" href="#"><img src="#" alt="Виртуальная реальность"></a></li>
+          <li>
+            <a class="product-list" href="#"><img src="#" alt="Моноподы для селфи"></a></li>
+          <li>
+            <a class="product-list" href="#"><img src="#" alt="Экшн-камеры"></a></li>
+          <li>
+            <a class="product-list" href="#"><img src="#" alt="Фитнес-браслеты"></a></li>
+          <li>
+            <a class="product-list" href="#"><img src="#" alt="Умные часы"></a></li>
+          <li>
+            <a class="product-list" href="#"><img src="#" alt="Квадрокоптеры"></a></li>
+        </ul>
+      </section>
+        <section class="advantages">
+          <h2 class="visually-hiden">Преимущества</h2>
+          <div>
+            <ul>
+            <li class="button button-advantages">доставка</li>
+            <li class="button button-advantages">гарантия</li>
+            <li class="button button-advantages">кредит</li>
+            </ul>
+          </div>
+          <div>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 clas="advantages-title">Доставка</h3>
+            <p class="advantages-description">Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно! Ведь
+              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <img src="#" alt="Доставка товара">
+          </li>
+          <li class="advantages-item">
+            <h3 clas="advantages-title">Гарантия</h3>
+            <p class="advantages-description"></p>
+            <img src="#" alt="?">
+          </li>
+          <li class="advantages-item">
+            <h3 clas="advantages-title">Кредит</h3>
+            <p class="advantages-description"></p>
+            <img src="#" alt="?">
+          </li>
+        </ul>
+      </div>
+      </section>
+      <section class="delivery">
+        <div>
+          <a class="delivery-link link" href="#">Доставим редкий товар под заказ</a>
+        </div>
+        <p class="delivery-title"><span><h4>Доставка под заказ</h4></span>
+        </p>
+          <form action="#" method="post">
+          <label for="full_name-field">Ваше имя:</label>
+          <input type="text" id="full_name-field" name="full_name" placeholder="Введите имя">
+          <label for="e-mail-field">Ваш e-mail:</label>
+          <input type="text" id="e-mail-field" name="e-mail" placeholder="e-mail">
+          <label for="item-field">Что нужно привезти:</label>
+          <input type="text" id="item-field" name="item" placeholder="В свободной форме">
+          <label for="quantity-field">Количество:</label>
+          <input type="text" id="quantity-field" name="quantity">
+          <button class="form-button quantity-field-prev" type="button">
+          <span class="visually-hiden">Убрать</span></button>
+          <button class="form-button quantity-field-next" type="button">
+          <span class="visually-hiden">Добавить</span></button>
+          <input type="submit" class="button" value="Отправить"/>
+      </section>
+
     </main>
 
     <footer>
       <section class="footer-contacts">
-        <h2 class="visually-hiden">Адрес</h2><!--после разметки main уже будет другой h-->
+        <h2 class="visually-hiden">Адрес</h2>
         <img src="#" width="145" height="36" alt="Логотип интернет-магазина device">
         <address class="footer-contacts-adress">
         <p class="contact-adress-text">Санкт-Петербург, набережная<br>
@@ -64,33 +180,29 @@
         <div class="footer-contacts-rectangle">
         </div>
       </section>
-      <section>
-      <nav class="footer-navigation">
+      <section class="footer-navigation">
         <ul class="footer-navigation-list">
           <li><a class="footer-navigation-link" href="#">Доставка</a></li>
           <li><a class="footer-navigation-link" href="#">Гарантия</a></li>
           <li><a class="footer-navigation-link" href="#">Контакты</a></li>
         </ul>
+      </section>
       <section class="footer-social">
-      <h2 class="visually-hiden">Наши соц. сети</h2><!--после разметки main уже будет другой h-->
+      <h2 class="visually-hiden">Наши соц. сети</h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy"></a>
-             <span class="visually-hiden">Ютьюб</span>
+            <a class="button" href="https://t.me/htmlacademy">Ютьюб</a>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru"></a>
-             <span class="visually-hiden">Телеграм</span>
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">Телеграм</a>
            <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru"></a>
-             <span class="visually-hiden">Твиттер</span>
+            <a class="button" href="https://twitter.com/htmlacademy_ru">Твиттер</a>
           </li>
         </ul>
       </section>
-      </section>
       <section class="footer-contacts">
-        <h2 class="visually-hiden">Контакты</h2><!--после разметки main уже будет другой h-->
+        <h2 class="visually-hiden">Контакты</h2>
         <a class="footer-contacts-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-        <a class="htmlacademy-link" href="#">.html<br> academy</a>
+        <a class="htmlacademy-link" href="#">.html academy</a>
       </section>
     </footer>
 

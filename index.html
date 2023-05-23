@@ -25,7 +25,6 @@
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li>
-            <!--Цифра в круге — не иконка, это текст, где указано сколько товаров в корзине-->
             <a class="navigation-link" href="#">
               <span class="navigation-link-badge">2</span>
               <span class="visually-hidden">товара.</span>
@@ -53,7 +52,6 @@
         </ul>
       </nav>
     </header>
-
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазин гаджетов device</h1>
       <section class="gallery">
@@ -85,9 +83,9 @@
           <li>
             <img class="slider-image" src="#" alt="квадрокоптер">
             <div class="slider-description">
-              <p class="slider-pagination-item-title">Порхает как бабочка, <!--название класса правильно?-->
+              <p class="slider-title">Порхает как бабочка,
                 жалит как пчела!</p>
-              <p class="slider-pagination-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен
+              <p class="slider-item-title">Этот обычный, на первый взгляд, квадрокоптер оснащен
                 мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="button" href="#">подробнее</a>
               <table class="slider-pagination-item-characteristics">
@@ -102,9 +100,48 @@
               </table>
             </div>
           </li>
+          <li>
+            <img class="slider-image" src="#" alt="фитнес-браслет">
+            <div class="slider-description">
+              <p class="slider-title">Худеем правильно!</p>
+              <p class="slider-item-title">Мотивирующие фитнес-браслеты помогут найти
+                в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a class="button" href="#">подробнее</a>
+              <table class="slider-pagination-item-characteristics">
+                <tr>
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <th>Без подзарядки</th>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li>
+            <img class="slider-image" src="#" alt="моноподы">
+            <div class="slider-description">
+              <p class="slider-title">Делай селфи,как Бен Стиллер! </p>
+              <p class="slider-item-title">Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+              <a class="button" href="#">подробнее</a>
+              <table class="slider-pagination-item-characteristics">
+                <tr>
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+              </table>
+            </div>
+          </li>
         </ol>
       </section>
       <section class="product">
+        <h2 class="visually-hidden">Категории гаджетов</h2>
         <ul class="product-list">
           <li>
             <a class="product-link" href="#">Виртуальная реальность</a>
@@ -135,7 +172,8 @@
           <li>
             <button class="button button-advantages">Гарантия</button>
           </li>
-          <button class="button button-advantages">Кредит</button>
+          <li>
+            <button class="button button-advantages">Кредит</button>
           </li>
         </ul>
         <ul class="advantages-list">
@@ -147,11 +185,15 @@
           </li>
           <li class="advantages-item">
             <h3 clas="advantages-title">Гарантия</h3>
-            <p class="advantages-description"></p>
+            <p class="advantages-description">Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
           </li>
           <li class="advantages-item">
             <h3 clas="advantages-title">Кредит</h3>
-            <p class="advantages-description"></p>
+            <p class="advantages-description">Залезть в долговую яму стало проще!
+              Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+              Выгодные для банка, разумеется.</p>
           </li>
         </ul>
       </section>
@@ -161,7 +203,7 @@
       </section>
       <section class="about">
         <h2>О нас</h2>
-        <p class="">Огромный выбор гаджетов не оставит равнодушным
+        <p class="about-title">Огромный выбор гаджетов не оставит равнодушным
           гика, который есть в каждом из нас.</p>
         <p class="about-description">Мы можем доставить ваш товар в самые отдалённые
           уголки России транспортными компаниями:</p>
@@ -176,7 +218,7 @@
             <a class="about-link" href="#">ТоксБерри</a>
           </li>
         </ul>
-        <button class="button about-button">Подробнее о нас</button>
+        <a class="button about-button" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
@@ -184,12 +226,12 @@
           Заодно сможете проверить работоспособность покупки.</p>
         <h3>Интернет-магазин "Девайс"</h3>
         <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <a class="contacts-phone" href="tel:+7 (812) 812-12-12"></a>
+        <a class="contacts-phone" href="tel:+7(812)812-12-12"></a>
         <h3>Время работы</h3>
         <p>пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
-        <button class="button contacts-button">Напишите нам</button>
+        <a class="button about-button" href="#">Наишите нам</a>
       </section>
-      <section class="signup">
+      <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p class="signup-description">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции,
@@ -202,7 +244,6 @@
         <p class="signup-text">Это бесплатно</p>
       </section>
     </main>
-
     <footer>
       <a class="footer-logo" href="index.html">
         <img src="#" width="145" height="36" alt="Логотип интернет-магазина device">
@@ -227,8 +268,7 @@
           <a class="button" href="https://t.me/htmlacademy"><span class="visually-hidden">Ютьюб</span></a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru"><span
-              class="visually-hidden">Телеграм</span></a>
+          <a class="button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Телеграм</span></a>
         <li class="footer-social-item">
           <a class="button" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Твиттер</span></a>
         </li>
@@ -250,9 +290,9 @@
           <span class="visually-hidden">Убрать</span></button>
         <button class="form-button quantity-field-next" type="button">
           <span class="visually-hidden">Добавить</span></button>
-        <input type="submit" class="button" value="Отправить" />
+        <input type="submit" class="button" value="Отправить">
+      </form>
     </section>
-
   </body>
 
 </html>
